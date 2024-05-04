@@ -20,10 +20,10 @@ public class InputController {
         return ResponseEntity.ok(service.getAllTransaction(user));
     }
 
-    @GetMapping("/transaction/getTransaction/{user}/{account}/{datetime}")
-    public ResponseEntity<TransactionDto> getTransaction(@PathVariable User user, @PathVariable Account account, @PathVariable String datetime) {
+    @GetMapping("/transaction/getTransaction/{user}/{bankaccount}/{datetime}")
+    public ResponseEntity<TransactionDto> getTransaction(@PathVariable User user, @PathVariable BankAccount bankaccount, @PathVariable String datetime) {
 
-        Optional<TransactionDto> transaction = service.getTransaction(user, account, datetime);
+        Optional<TransactionDto> transaction = service.getTransaction(user, bankaccount, datetime);
 
         return transaction.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
@@ -58,8 +58,8 @@ public class InputController {
         }
     }
 
-    @DeleteMapping("/transaction/deleteTransaction/{user}/{account}/{datetime}")
-    public void deleteTransaction(@PathVariable User user, @PathVariable Account account, @PathVariable String datetime) {
-        service.delete(user, account, datetime);
+    @DeleteMapping("/transaction/deleteTransaction/{user}/{bankaccount}/{datetime}")
+    public void deleteTransaction(@PathVariable User user, @PathVariable BankAccount bankaccount, @PathVariable String datetime) {
+        service.delete(user, bankaccount, datetime);
     }
 }
