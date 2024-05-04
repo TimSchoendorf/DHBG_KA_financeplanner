@@ -1,8 +1,11 @@
+import Exceptions.BankAccountNotFound;
 import Exceptions.CountryNotSupported;
 import Exceptions.InvalidIBAN;
 import enumDefinition.CountryCode;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class User {
     private String vName;
@@ -31,13 +34,34 @@ public class User {
     }
 
     public boolean removeBankAccount(String IBAN) {
+        try {
+            accounts.remove(findBankAccountByIBAN(IBAN));
+            return true;
+        } catch (BankAccountNotFound e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+    }
+
+    public boolean newTransaction(String IBAN, double amount, LocalDateTime time) {
+        try {
+            accounts.get(findBankAccountByIBAN(IBAN)).transactions.add(new Transaction(amount,time));
+            return true;
+        } catch (BankAccountNotFound e) {
+            return false;
+        }
+    }
+
+
+    private int findBankAccountByIBAN(String iban) throws BankAccountNotFound {
         for(int index =0; index < accounts.size(); index++) {
-            if (accounts.get(index).getIban().equals(IBAN)) {
-                accounts.remove(index);
-                return true;
+            if (accounts.get(index).getIban().equals(iban)) {
+                return index;
+            }
+            else{
+                throw new BankAccountNotFound();
             }
         }
-        return false;
     }
 
 }

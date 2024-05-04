@@ -16,7 +16,7 @@ public class BankAccount {
     private String iban;
 
     private String accountType;
-    private ArrayList<Transaction> transactions;
+    public ArrayList<Transaction> transactions;
 
     private double dummyBalance; // This is only for Simulation
 
