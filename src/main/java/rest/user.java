@@ -15,10 +15,10 @@ public class InputController {
     @Autowired
     UserService service;
 
-    @GetMapping("/user/getUser/{name}/{password}")
-    public ResponseEntity<UserDto> getUser(@PathVariable String name, @PathVariable String password) {
+    @GetMapping("/user/getUser/{email}")
+    public ResponseEntity<UserDto> getUser(@PathVariable String email) {
 
-        Optional<UserDto> user = service.getUser(name, password);
+        Optional<UserDto> user = service.getUser(email);
 
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
@@ -54,7 +54,7 @@ public class InputController {
     }
 
     @DeleteMapping("/user/deleteUser/{name}/{password}")
-    public void deleteUser(@PathVariable String name, @PathVariable String password) {
-        service.delete(name, password);
+    public void deleteUser(@PathVariable String name, @PathVariable String email) {
+        service.delete(email);
     }
 }

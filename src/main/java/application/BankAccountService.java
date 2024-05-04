@@ -31,7 +31,7 @@ public class BankAccountService {
         return dtos;
     }
 
-    public Optional<BankAccountDtoDto> getBankAccount(String user, String iban) {
+    public Optional<BankAccountDto> getBankAccount(String user, String iban) {
         Optional<BankAccountEntity> entityOptional= repository.findById(user, iban);
 
         return entityOptional.map(entity -> entityToDtoMapper.mapEntityToDto(entity));

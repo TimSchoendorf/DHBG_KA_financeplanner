@@ -15,15 +15,20 @@ public class BankAccount {
     @Autowired
     BankAccountService service;
 
-	@GetMapping("/bankaccount/getAllBankAccount/{user}")
-    public ResponseEntity<List<BankAccountDto>> getAllBankAccount(user) {
-        return ResponseEntity.ok(service.getAllBankAccount(user));
+	@GetMapping("/bankaccount/getAllBankAccount")
+    public ResponseEntity<List<BankAccountDto>> getAllBankAccount(email) {
+        return ResponseEntity.ok(service.getAllBankAccount(email));
     }
 
-    @GetMapping("/bankaccount/getBankAccount/{user}/{iban}")
-    public ResponseEntity<BankAccountDto> getBankAccount(@PathVariable User user, @PathVariable String iban) {
+    @GetMapping("/bankaccount/getAllBankAccountFromUser/{email}")
+    public ResponseEntity<List<BankAccountDto>> getAllBankAccountFromUser(email) {
+        return ResponseEntity.ok(service.getAllBankAccountFromUser(email));
+    }
 
-        Optional<BankAccountDto> bankaccount = service.getBankAccount(user, iban);
+    @GetMapping("/bankaccount/getBankAccount/{email}/{iban}")
+    public ResponseEntity<BankAccountDto> getBankAccount(@PathVariable String email, @PathVariable String iban) {
+
+        Optional<BankAccountDto> bankaccount = service.getBankAccount(email, iban);
 
         return bankaccount.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
@@ -58,8 +63,8 @@ public class BankAccount {
         }
     }
 
-    @DeleteMapping("/bankaccount/deleteBankAccount/{user}/{iban}")
-    public void deleteBankAccount(@PathVariable User user, @PathVariable String iban) {
-        service.delete(user, iban);
+    @DeleteMapping("/bankaccount/deleteBankAccount/{email}/{iban}")
+    public void deleteBankAccount(@PathVariable String email, @PathVariable String iban) {
+        service.delete(email, iban);
     }
 }
