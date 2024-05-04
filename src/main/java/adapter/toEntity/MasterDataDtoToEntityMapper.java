@@ -1,4 +1,4 @@
-package adapter.EnityToDto;
+package adapter.toEntity;
 
 import adapter.dto.MasterDataDto;
 import domain.entity.MasterDataEntity;

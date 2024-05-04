@@ -1,4 +1,4 @@
-package adapter.EnityToDto;
+package adapter.toEntity;
 
 import adapter.dto.BankAccountDto;
 import adapter.dto.TransactionsDto;

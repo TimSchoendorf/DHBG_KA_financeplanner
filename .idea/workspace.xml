@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9462fb9-be51-479a-8d61-6cbfba068072" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/EnityToDto/BankAccountDtoToEntityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/EnityToDto/MasterDataDtoToEntityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/EnityToDto/UserDtoToEntityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/repository/TransactionsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/ToDto/BankAccountEntityToDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/ToDto/MasterDataEntityToDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/ToDto/TransactionEntityToDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/ToDto/UserEntityToDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/toEntity/TransactionsDtoToEntityMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/entity/BankAccountEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/entity/BankAccountEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/repository/TransactionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/EnityToDto/BankAccountDtoToEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/toEntity/BankAccountDtoToEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/EnityToDto/MasterDataDtoToEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/toEntity/MasterDataDtoToEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/EnityToDto/UserDtoToEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/toEntity/UserDtoToEntityMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

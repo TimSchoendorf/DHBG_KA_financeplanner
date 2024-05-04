@@ -1,4 +1,4 @@
-package adapter.EnityToDto;
+package adapter.toEntity;
 import domain.entity.*;
 import adapter.dto.*;
 //import org.springframework.stereotype.Component;
