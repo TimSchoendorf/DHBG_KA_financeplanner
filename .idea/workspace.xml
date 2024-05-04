@@ -5,12 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9462fb9-be51-479a-8d61-6cbfba068072" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/BankAccount/BankAccountJPA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/MasterData/MasterDataJPA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/Transaction/TransactionJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/UserJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/User/UserJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uAddress.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +54,7 @@
   "keyToString": {
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Kyle Henselmann/IdeaProjects",
@@ -82,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714837615186</updated>
       <workItem from="1714837616266" duration="1000" />
-      <workItem from="1714837743007" duration="492000" />
+      <workItem from="1714837743007" duration="2297000" />
     </task>
     <servers />
   </component>
