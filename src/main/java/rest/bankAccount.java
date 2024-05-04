@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class InputController {
+public class BankAccount {
 
     @Autowired
     BankAccountService service;
