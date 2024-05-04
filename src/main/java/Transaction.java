@@ -9,6 +9,7 @@ public class Transaction {
      private String particulars;
      private String comment;
      private Category category;
+
      private boolean positiv;
 
      public LocalDateTime getDateTime() {
@@ -54,6 +55,8 @@ public class Transaction {
      public void setCategory(Category category) {
           this.category = category;
      }
+
+
 
      public Transaction(double amount, LocalDateTime dateTime) {
           if (Double.compare(amount, 0.0) == -1) positiv = false;

@@ -1,5 +1,6 @@
-package persistence.Transaction;
+package persistence.jpa;
 
+import enumDefinition.Category;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -25,6 +26,16 @@ public class TransactionJPA {
     @Column(name = "particulars")
     private String particulars;
 
+    @Column(name = "comment")
+    private String comment;
+
+    @Column(name="category")
+    private Category category;
+
+    @Column(name = "positiv")
+    private boolean positiv;
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -33,11 +44,12 @@ public class TransactionJPA {
         return Double.compare(that.amount, amount) == 0 &&
                 Objects.equals(dateTime, that.dateTime) &&
                 Objects.equals(description, that.description) &&
+                Objects.equals(positiv, that.positiv) &&
                 Objects.equals(particulars, that.particulars);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(dateTime, amount, description, particulars);
+        return Objects.hash(dateTime, amount, description, particulars, positiv);
     }
 }

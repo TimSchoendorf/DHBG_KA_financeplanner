@@ -1,4 +1,4 @@
-package persistence.BankAccount;
+package persistence.jpa;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -39,6 +39,9 @@ public class BankAccountJPA {
     @Getter @Setter
     private String accountType;
 
+    @Basic
+    @Column(name = "dummyBalance")
+    private double dummyBalance;
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
