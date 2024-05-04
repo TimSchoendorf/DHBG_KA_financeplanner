@@ -7,6 +7,10 @@ public class Transaction {
      private double amount;
      private String description;
      private String particulars;
+     private String comment;
+     private Category category;
+
+     private boolean positiv;
 
      public LocalDateTime getDateTime() {
           return dateTime;
@@ -52,10 +56,7 @@ public class Transaction {
           this.category = category;
      }
 
-     private String comment;
-     private Category category;
 
-     private boolean positiv;
 
      public Transaction(double amount, LocalDateTime dateTime) {
           if (Double.compare(amount, 0.0) == -1) positiv = false;

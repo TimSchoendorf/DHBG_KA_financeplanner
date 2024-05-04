@@ -1,4 +1,4 @@
-package persistence.User;
+package persistence.jpa;
 
 import jakarta.persistence.*;
 import lombok.Getter;

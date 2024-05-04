@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9462fb9-be51-479a-8d61-6cbfba068072" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/dto/BankAccountDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/dto/BuchDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/dto/MasterDataDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/dto/TransactionsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/entity/BankAccountEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/entity/MasterDataEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/entity/TransactionsEnity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/repository/BankAccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/repository/MasterDataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/dto/TransactionsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/dto/TransactionsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/BankAccount/BankAccountJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/jpa/BankAccountJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/MasterData/MasterDataJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/jpa/MasterDataJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/Transaction/TransactionJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/jpa/TransactionJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/User/UserJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/jpa/UserJPA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714837615186</updated>
       <workItem from="1714837616266" duration="1000" />
-      <workItem from="1714837743007" duration="2769000" />
+      <workItem from="1714837743007" duration="3941000" />
     </task>
     <servers />
   </component>
