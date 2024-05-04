@@ -1,3 +1,6 @@
+import Exceptions.CountryNotSupported;
+import Exceptions.InvalidIBAN;
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 
@@ -18,38 +21,40 @@ public class BankAccount {
     private double dummyBalance; // This is only for Simulation
 
 
-    public BankAccount(String iban) {
+    public BankAccount(String iban) throws CountryNotSupported, InvalidIBAN {
         if (validateIBAN(iban)) splitIBAN(iban);
     }
 
-    public BankAccount(int accountNumber, int bankCode, int checkDigit, String countryCode) {
-        constructIBAN(countryCode, checkDigit, bankCode, accountNumber);
+    public BankAccount(int accountNumber, int bankCode, int checkDigit, String countryCode) throws CountryNotSupported, InvalidIBAN {
+        String iban = constructIBAN(countryCode, checkDigit, bankCode, accountNumber);
+        assert iban != null;
+        if (validateIBAN(iban)) splitIBAN(iban);
     }
 
-    private static String constructIBAN( String countryCode, int checkDigit, int bankCode, int accountNumber) {
+    private static String constructIBAN(String countryCode, int checkDigit, int bankCode, int accountNumber) throws CountryNotSupported, InvalidIBAN {
         String iban = String.format("%s%02d%08d%010d", countryCode, checkDigit, bankCode, accountNumber);
-        if(validateIBAN(iban)) return iban;
+        if (validateIBAN(iban)) return iban;
 
         return null;
     }
 
 
-    private static boolean validateIBAN(String iban) {
-        // Die ersten 4 Zeichen werden an das Ende verschoben
+    private static boolean validateIBAN(String iban) throws CountryNotSupported, InvalidIBAN {
+
+        if (iban.substring(0, 2) != "DE") throw new CountryNotSupported(iban.substring(0, 2));
         String rearrangedIban = iban.substring(4) + iban.substring(0, 4);
 
-        // Ersetze jeden Buchstaben durch zwei Ziffern, entsprechend seiner Position im Alphabet
-        // und beginnend bei 10 für 'A'.
         StringBuilder numericIBAN = new StringBuilder();
         for (int i = 0; i < rearrangedIban.length(); i++) {
             numericIBAN.append(Character.digit(rearrangedIban.charAt(i), 36));
         }
 
-        // Verwandle den String in eine große Zahl
+
         BigInteger ibanNumber = new BigInteger(numericIBAN.toString());
 
-        // Prüfen, ob die große Zahl modulo 97 gleich 1 ist
-        return ibanNumber.mod(BigInteger.valueOf(97)).intValue() == 1;
+        boolean validation = ibanNumber.mod(BigInteger.valueOf(97)).intValue() == 1;
+        if (validation) return validation;
+        else throw new InvalidIBAN(iban);
     }
 
     private void splitIBAN(String iban) {
@@ -65,7 +70,7 @@ public class BankAccount {
 
     }
 
-    public double getBalance(){
+    public double getBalance() {
 
         for (Transaction transaction : transactions) {
             if (transaction.isPositiv()) dummyBalance += transaction.getAmount();
