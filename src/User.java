@@ -5,7 +5,6 @@ import enumDefinition.CountryCode;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class User {
     private String vName;
