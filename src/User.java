@@ -8,7 +8,7 @@ public class User {
     private String vName;
     private String lName;
     private String vEmail;
-    private uAddress address;
+    private MasterData address;
     private ArrayList<BankAccount> accounts;
 
     public User(String vName, String lName, String vEmail,String street, String city, String state, String zip) throws CountryNotSupported {
@@ -16,7 +16,7 @@ public class User {
         this.vName = vName;
         this.lName = lName;
         this.vEmail = vEmail;
-        this.address = new uAddress(street, city, state, zip);
+        this.address = new MasterData(street, city, state, zip);
     }
 
     public boolean addBankAccount(String IBAN, double dummyBalance) {
