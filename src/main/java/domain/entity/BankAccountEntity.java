@@ -1,7 +1,10 @@
 package domain.entity;
 
 import java.util.ArrayList;
-
+import lombok.Getter;
+import lombok.Setter;
+@Getter
+@Setter
 public class BankAccountEntity {
     private int accountNumber;
     private int bankCode;
