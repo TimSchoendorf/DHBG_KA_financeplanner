@@ -1,6 +1,5 @@
-package persistence;
+package persistence.user;
 import jakarta.persistence.*;
 
-import java.util.Objects;
 public class UserJPA {
 }
