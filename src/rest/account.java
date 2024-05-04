@@ -59,7 +59,7 @@ public class InputController {
     }
 
     @DeleteMapping("/account/deleteAccount/{user}/{iban}")
-    public void deleteUser(@PathVariable User user, @PathVariable String iban) {
+    public void deleteAccount(@PathVariable User user, @PathVariable String iban) {
         service.delete(user, iban);
     }
 }
