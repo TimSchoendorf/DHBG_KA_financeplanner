@@ -1,3 +1,5 @@
+package z_helper;
+
 public class MasterData {
     private String street;
     private String city;

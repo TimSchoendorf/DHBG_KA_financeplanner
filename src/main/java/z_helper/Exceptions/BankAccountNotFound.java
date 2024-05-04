@@ -1,4 +1,4 @@
-package Exceptions;
+package z_helper.Exceptions;
 
 public class BankAccountNotFound extends Exception {
     public BankAccountNotFound() {

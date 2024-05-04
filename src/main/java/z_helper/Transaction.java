@@ -1,4 +1,6 @@
-import enumDefinition.Category;
+package z_helper;
+
+import z_helper.enumDefinition.Category;
 
 import java.time.LocalDateTime;
 

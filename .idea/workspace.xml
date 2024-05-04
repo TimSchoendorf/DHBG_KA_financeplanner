@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9462fb9-be51-479a-8d61-6cbfba068072" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/ToDto/BankAccountEntityToDtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/ToDto/MasterDataEntityToDtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/ToDto/TransactionEntityToDtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/ToDto/UserEntityToDtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/toEntity/TransactionsDtoToEntityMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/EnityToDto/BankAccountDtoToEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/toEntity/BankAccountDtoToEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/EnityToDto/MasterDataDtoToEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/toEntity/MasterDataDtoToEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/EnityToDto/UserDtoToEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/toEntity/UserDtoToEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z_helper/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exceptions/BankAccountNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z_helper/Exceptions/BankAccountNotFound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exceptions/CountryNotSupported.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z_helper/Exceptions/CountryNotSupported.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exceptions/InvalidIBAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z_helper/Exceptions/InvalidIBAN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z_helper/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MasterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z_helper/MasterData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z_helper/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z_helper/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/entity/TransactionsEnity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/entity/TransactionsEnity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/repository/TransactionsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/repository/TransactionsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enumDefinition/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z_helper/enumDefinition/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enumDefinition/CountryCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z_helper/enumDefinition/CountryCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/jpa/TransactionJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/jpa/TransactionJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest/transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/transaction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

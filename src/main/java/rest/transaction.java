@@ -28,7 +28,7 @@ public class InputController {
         return transaction.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @PostMapping("/Transaction/createTransaction")
+    @PostMapping("/z_helper.Transaction/createTransaction")
     public ResponseEntity<TransactionDto> createTransaction(@RequestBody TransactionDto dto) {
 
         try {

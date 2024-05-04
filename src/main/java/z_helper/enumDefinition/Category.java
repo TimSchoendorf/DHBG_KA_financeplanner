@@ -1,4 +1,4 @@
-package enumDefinition;
+package z_helper.enumDefinition;
 
 public enum Category {
     RESIDE,

@@ -1,6 +1,6 @@
 package domain.entity;
 
-import enumDefinition.Category;
+import z_helper.enumDefinition.Category;
 
 import java.time.LocalDateTime;
 import lombok.Getter;

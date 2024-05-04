@@ -1,6 +1,6 @@
 package persistence.jpa;
 
-import enumDefinition.Category;
+import z_helper.enumDefinition.Category;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

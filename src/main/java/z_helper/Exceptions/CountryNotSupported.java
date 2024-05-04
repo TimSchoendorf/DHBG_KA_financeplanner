@@ -1,4 +1,4 @@
-package Exceptions;
+package z_helper.Exceptions;
 
 public class CountryNotSupported extends Exception {
     public CountryNotSupported(String countryCode) {
