@@ -5,7 +5,7 @@ import java.util.ArrayList;
 @Getter
 @Setter
 
-public class BuchDto {
+public class UserDto {
     private String vName;
     private String lName;
     private String vEmail;

@@ -15,4 +15,5 @@ public class BankAccountDto {
 
     private String accountType;
     public ArrayList<TransactionsDto> transactions;
+    private double dummyBalance; // This is only for Simulation
 }
