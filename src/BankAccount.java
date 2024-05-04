@@ -70,6 +70,9 @@ public class BankAccount {
 
     }
 
+    public String getIban(){
+        return this.iban;
+    }
     public double getBalance() {
 
         for (Transaction transaction : transactions) {
@@ -78,6 +81,11 @@ public class BankAccount {
         }
         return dummyBalance;
 
+    }
+
+    public boolean setBalance(double balance) {
+        this.dummyBalance = balance;
+        return true;
     }
 
 }
